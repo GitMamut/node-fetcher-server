@@ -36,7 +36,7 @@ function getRemoteResponse(myResponse, reqId) {
             logToConsole("RRS <- " + body.replace(/(\r\n|\n|\r)/gm, ''), reqId);
 
             let formattedResults = JSON.parse(body).TaskValues.map(v => ({
-                "name": v.Name,
+                "name": v.Name.replace(".","_"),
                 "value": v.Value
             }));
             let sensorResponse = {
