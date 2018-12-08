@@ -1,7 +1,7 @@
 var dateFormat = require("dateformat");
 var request = require("request");
 var http = require('http');
-var sensorUrl = "x";
+var sensorUrl = "http://espeasy/json?tasknr=2&view=sensorupdate";
 var reqCounter = 0;
 
 var server = http.createServer((function (request, myResponse) {
