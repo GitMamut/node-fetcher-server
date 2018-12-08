@@ -1,0 +1,13 @@
+{
+    "name": "node-fetcher-server",
+    "version": "1.0.0",
+    "description": "Node.js on Docker",
+    "author": "Minfrost <przemek@mintfrost.com>",
+    "main": "web_server.js",
+    "scripts": {
+      "start": "node web_server.js"
+    },
+    "dependencies": {
+      
+    }
+  }
